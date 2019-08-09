@@ -1,14 +1,19 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Hello world App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <ion-button (click)="TakePhotos()" expand="full" 
+    color="dark">TakePhotos</ion-button>
+    <ion-list *ngFor="let photo of photos">
+      <ion-item>
+        <img src={{photo}} style="width:200px;height:150px;"/>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>

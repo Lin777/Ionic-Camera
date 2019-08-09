@@ -1,5 +1,8 @@
 {
   "name": "helloWorld",
-  "integrations": {},
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
   "type": "angular"
 }
